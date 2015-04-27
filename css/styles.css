@@ -85,6 +85,7 @@ background: #51D4B6;
 background: #9FDE32;
 }
 .feature a {
+	margin-top: 20px;
 display: inline-block;
 font-size: 18px;
 color: #fff;
@@ -94,6 +95,9 @@ width: 220px;
 text-align: center;
 line-height: 41px;
 /* border-radius: 10px; */
+}
+.feature-lg a {
+	width: 290px;
 }
 .row-reform {
 	margin-top: 30px;
@@ -647,6 +651,13 @@ img, video, iframe, embed, object {
 }
 /* Features
     -------------------------------------------------*/
+#tariffs {
+	padding-top: 35px;
+	padding-bottom: 25px;
+	overflow: hidden;
+	background: #FFFFFF;
+	border-top: 1px dashed rgba(163, 0, 70, 0.35);
+}
 #homes {
 	padding-top: 35px;
 	padding-bottom: 25px;
@@ -654,7 +665,20 @@ img, video, iframe, embed, object {
 	background: #FFFFFF;
 	border-top: 1px dashed rgba(163, 0, 70, 0.35);
 }
-
+#contracts {
+	padding-top: 35px;
+	padding-bottom: 25px;
+	overflow: hidden;
+	background: #FFFFFF;
+	border-top: 1px dashed rgba(163, 0, 70, 0.35);
+}
+#services {
+	padding-top: 35px;
+	padding-bottom: 25px;
+	overflow: hidden;
+	background: #FFFFFF;
+	border-top: 1px dashed rgba(163, 0, 70, 0.35);
+}
 #aboutUs { 
 	padding-top: 35px;
 	padding-bottom: 25px;
@@ -1071,7 +1095,7 @@ footer input.form-control{
 .area1 a{
 	margin-bottom:10px;
 }
-#services, #aboutUs, #homes, #plans, #contactUs{
+#services, #aboutUs, #homes, #contracts, #services, #tariffs, #plans, #contactUs{
 padding:85px 0;
 } 
 .heading h2 {
