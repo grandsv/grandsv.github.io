@@ -49,6 +49,7 @@
         },
 
         init: function () {
+	        var self = this;
             // Introduce defaults that can be extended either
             // globally or using an object literal.
             this.config = $.extend({}, this.defaults, this.options, this.metadata);
@@ -72,6 +73,8 @@
             //Update the positions on resize too
             this.$win.on('resize.onePageNav', $.proxy(this.getPositions, this));
 
+	        setTimeout(function(){self.scrollChange();}, 500);
+
             return this;
         },
 
@@ -81,6 +84,7 @@
         },
 
         bindInterval: function () {
+
             var self = this;
             var docHeight;
 
@@ -89,6 +93,7 @@
             });
 
             self.t = setInterval(function () {
+
                 docHeight = self.$doc.height();
 
                 //If it was scrolled
@@ -192,6 +197,7 @@
                 //If it's not already the current section
                 if (!$parent.hasClass(this.config.currentClass)) {
                     //Change the highlighted nav item
+
                     this.adjustNav(this, $parent);
 
                     //If there is a scrollChange callback
