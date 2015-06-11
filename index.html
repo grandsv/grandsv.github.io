@@ -42,7 +42,7 @@
             <!--/.navbar-header-->
             <div id="main-nav" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav" id="mainNav">
-                    <li class="active" id="firstLink"><a href="#home" class="scroll-link">Главная</a></li>
+                    <li class="active" style="visibility: hidden" id="firstLink"><a href="#home" class="scroll-link">Главная</a></li>
                     <li><a href="#homes" class="scroll-link">Дома</a></li>
                     <li><a href="#tariffs" class="scroll-link">Тарифы</a></li>
                     <li><a href="#services" class="scroll-link">Услуги</a></li>
@@ -334,18 +334,34 @@
             <h2>Договора</h2>
         </div>
         <div class="row row-reform">
-            <div class="col-sm-6 text-center feature feature-lg">
-                <a href="docs/power_supply_contract.pdf" class="btn">Договор энергоснабжения pdf</a>
-            </div>
-            <div class="col-sm-6 text-center feature feature-lg">
-                <a href="docs/heat_supply_contract.pdf" class="btn">Договор теплоснабжения pdf</a>
-            </div>
-        </div>
-        <div class="row row-reform">
-            <div class="col-sm-6 text-center feature feature-lg">
-                <a href="docs/water_discharge_contract.pdf" class="btn">Договор водоотведения pdf</a>
-            </div>
-            <div class="col-sm-6 text-center feature feature-lg">
+            <div class="col-md-12 text-center">
+                <table class="table table-hover table-contracts">
+                    <thead>
+                    <tr>
+                        <th>Услуга</th>
+                        <th>Поставщик</th>
+                        <th>Договор</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Электроэнергия</td>
+                        <td>ЗАО "СПГЭС"</td>
+                        <td>№ 10461 <a href="docs/power_supply_contract.pdf">(Скачать pdf)</a></td>
+                    </tr>
+                    <tr>
+                        <td>Теплоснабжения</td>
+                        <td>ОАО "ВоТГК"</td>
+                        <td>№ 53340N <a href="docs/heat_supply_contract.pdf">(Скачать pdf)</a></td>
+                    </tr>
+                    <tr>
+                        <td>Водоотведения</td>
+                        <td>МУПП "Саратовводоканал"</td>
+                        <td>№ 121 <a href="docs/water_discharge_contract.pdf">(Скачать pdf)</a></td>
+                    </tr>
+
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
