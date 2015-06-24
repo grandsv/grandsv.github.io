@@ -1436,3 +1436,12 @@ color: #fff;
 .table-contracts thead tr th{
     text-align: center;
 }
+
+.main {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+.main ul li{
+    margin-left: 20px;
+    list-style: square outside;
+}
